@@ -1,0 +1,9 @@
+# Nmap 7.93 scan initiated Mon Mar  6 19:34:28 2023 as: nmap -sU -O -p- -oA nmap/udp 10.10.10.8
+Nmap scan report for 10.10.10.8
+Host is up (0.052s latency).
+All 65535 scanned ports on 10.10.10.8 are in ignored states.
+Not shown: 65535 open|filtered udp ports (no-response)
+Too many fingerprints match this host to give specific OS details
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Mar  6 20:30:11 2023 -- 1 IP address (1 host up) scanned in 3343.27 seconds

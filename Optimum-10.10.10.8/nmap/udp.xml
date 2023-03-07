@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Mon Mar  6 19:34:28 2023 as: nmap -sU -O -p- -oA nmap/udp 10.10.10.8 -->
+<nmaprun scanner="nmap" args="nmap -sU -O -p- -oA nmap/udp 10.10.10.8" start="1678149268" startstr="Mon Mar  6 19:34:28 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="udp" protocol="udp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.10.8" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskprogress task="UDP Scan" time="1678149761" percent="14.73" remaining="2854" etc="1678152614"/>
+<taskprogress task="UDP Scan" time="1678150501" percent="36.88" remaining="2110" etc="1678152611"/>
+<taskprogress task="UDP Scan" time="1678150957" percent="50.57" remaining="1652" etc="1678152608"/>
+<host starttime="1678149268" endtime="1678152611"><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="10.10.10.8" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="open|filtered" count="65535">
+<extrareasons reason="no-response" count="65535" proto="udp" ports="1-65535"/>
+</extraports>
+</ports>
+<os></os>
+<times srtt="51815" rttvar="17767" to="122883"/>
+</host>
+<runstats><finished time="1678152611" timestr="Mon Mar  6 20:30:11 2023" summary="Nmap done at Mon Mar  6 20:30:11 2023; 1 IP address (1 host up) scanned in 3343.27 seconds" elapsed="3343.27" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
