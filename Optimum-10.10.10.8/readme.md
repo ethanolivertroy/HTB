@@ -1,13 +1,3 @@
----
-layout: post
-title: "Hack the Box — Optimum"
-date: 2023-01-23
-draft: false
-tags: [""]
-categories: ["Hack The Box", "TJ Null's OSCP List"]
-summary: "One of the first HTB boxes I solved a few months ago from the TJ Null List in preparation for the PNPT and OSCP."
----
-
 # Hack the Box — Optimum
 
 With and Without Metasploit
