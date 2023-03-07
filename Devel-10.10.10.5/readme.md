@@ -1,13 +1,3 @@
----
-layout: post
-title: "Hack the Box — Devel"
-date: 2023-01-25
-draft: false
-tags: [""]
-categories: ["Hack The Box", "TJ Null's OSCP List"]
-summary: "One of the first HTB boxes I solved a few months ago from the TJ Null List in preparation for the PNPT and OSCP."
----
-
 # Hack the Box- Devel
 
 One of the first HTB boxes I solved a few months ago from the [TJ Null List](https://docs.google.com/spreadsheets/u/1/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/htmlview) in preparation for the PNPT and OSCP.
