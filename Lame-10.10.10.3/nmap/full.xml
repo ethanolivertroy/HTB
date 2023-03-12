@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sun Mar 12 14:35:11 2023 as: nmap -sC -sV -O -p- -oA nmap/full 10.10.10.3 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -O -p- -oA nmap/full 10.10.10.3" start="1678646111" startstr="Sun Mar 12 14:35:11 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.10.3" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1678646111" endtime="1678646365"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.10.3" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65530">
+<extrareasons reason="no-response" count="65530" proto="tcp" ports="1-20,23-138,140-444,446-3631,3633-65535"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ftp" product="vsftpd" version="2.3.4" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd:2.3.4</cpe></service><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="4.7p1 Debian 8ubuntu1" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:4.7p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  1024 600fcfe1c05f6a74d69024fac4d56ccd (DSA)&#xa;  2048 5656240f211ddea72bae61b1243de8f3 (RSA)"><table>
+<elem key="type">ssh-dss</elem>
+<elem key="key">AAAAB3NzaC1kc3MAAACBALz4hsc8a2Srq4nlW960qV8xwBG0JC+jI7fWxm5METIJH4tKr/xUTwsTYEYnaZLzcOiy21D3ZvOwYb6AA3765zdgCd2Tgand7F0YD5UtXG7b7fbz99chReivL0SIWEG/E96Ai+pqYMP2WD5KaOJwSIXSUajnU5oWmY5x85sBw+XDAAAAFQDFkMpmdFQTF+oRqaoSNVU7Z+hjSwAAAIBCQxNKzi1TyP+QJIFa3M0oLqCVWI0We/ARtXrzpBOJ/dt0hTJXCeYisKqcdwdtyIn8OUCOyrIjqNuA2QW217oQ6wXpbFh+5AQm8Hl3b6C6o8lX3Ptw+Y4dp0lzfWHwZ/jzHwtuaDQaok7u1f971lEazeJLqfiWrAzoklqSWyDQJAAAAIA1lAD3xWYkeIeHv/R3P9i+XaoI7imFkMuYXCDTq843YU6Td+0mWpllCqAWUV/CQamGgQLtYy5S0ueoks01MoKdOMMhKVwqdr08nvCBdNKjIEd3gH6oBk/YRnjzxlEAYBsvCmM4a0jmhz0oNiRWlc/F+bkUeFKrBx/D2fdfZmhrGg==</elem>
+<elem key="bits">1024</elem>
+<elem key="fingerprint">600fcfe1c05f6a74d69024fac4d56ccd</elem>
+</table>
+<table>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAABIwAAAQEAstqnuFMBOZvO3WTEjP4TUdjgWkIVNdTq6kboEDjteOfc65TlI7sRvQBwqAhQjeeyyIk8T55gMDkOD0akSlSXvLDcmcdYfxeIF0ZSuT+nkRhij7XSSA/Oc5QSk3sJ/SInfb78e3anbRHpmkJcVgETJ5WhKObUNf1AKZW++4Xlc63M4KI5cjvMMIPEVOyR3AKmI78Fo3HJjYucg87JjLeC66I7+dlEYX6zT8i1XYwa/L1vZ3qSJISGVu8kRPikMv/cNSvki4j+qDYyZ2E5497W87+Ed46/8P42LNGoOV8OcX/ro6pAcbEPUdUEfkJrqi2YXbhvwIJ0gFMb6wfe5cnQew==</elem>
+<elem key="bits">2048</elem>
+<elem key="fingerprint">5656240f211ddea72bae61b1243de8f3</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: WORKGROUP" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="netbios-ssn" product="Samba smbd" version="3.0.20-Debian" extrainfo="workgroup: WORKGROUP" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="3632"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="distccd" product="distccd" version="v1" extrainfo="(GNU) 4.2.4 (Ubuntu 4.2.4-1ubuntu4)" method="probed" conf="10"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<osmatch name="DD-WRT v24-sp1 (Linux 2.4.36)" accuracy="93" line="46578">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:2.4.36</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.23" accuracy="92" line="51984">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6.23</cpe></osclass>
+</osmatch>
+<osmatch name="OpenWrt White Russian 0.9 (Linux 2.4.30)" accuracy="92" line="46817">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.4.30</cpe></osclass>
+</osmatch>
+<osmatch name="Belkin N300 WAP (Linux 2.6.30)" accuracy="91" line="9781">
+<osclass type="WAP" vendor="Belkin" osfamily="embedded" accuracy="91"><cpe>cpe:/h:belkin:n300</cpe></osclass>
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:2.6.30</cpe></osclass>
+</osmatch>
+<osmatch name="Control4 HC-300 home controller" accuracy="91" line="19433">
+<osclass type="remote management" vendor="Control4" osfamily="embedded" accuracy="91"/>
+</osmatch>
+<osmatch name="D-Link DAP-1522 WAP, or Xerox WorkCentre Pro 245 or 6556 printer" accuracy="91" line="20530">
+<osclass type="WAP" vendor="D-Link" osfamily="embedded" accuracy="91"><cpe>cpe:/h:dlink:dap-1522</cpe></osclass>
+<osclass type="printer" vendor="Xerox" osfamily="embedded" accuracy="91"><cpe>cpe:/h:xerox:workcentre_pro_245</cpe><cpe>cpe:/h:xerox:workcentre_5665</cpe></osclass>
+</osmatch>
+<osmatch name="Dell Integrated Remote Access Controller (iDRAC5)" accuracy="91" line="21776">
+<osclass type="remote management" vendor="Dell" osfamily="embedded" accuracy="91"><cpe>cpe:/h:dell:remote_access_card:5</cpe></osclass>
+</osmatch>
+<osmatch name="Dell Integrated Remote Access Controller (iDRAC6)" accuracy="91" line="21811">
+<osclass type="remote management" vendor="Dell" osfamily="embedded" accuracy="91"><cpe>cpe:/h:dell:remote_access_card:6</cpe></osclass>
+</osmatch>
+<osmatch name="Linksys WET54GS5 WAP, Tranzeo TR-CPQ-19f WAP, or Xerox WorkCentre Pro 265 printer" accuracy="91" line="44298">
+<osclass type="WAP" vendor="Linksys" osfamily="embedded" accuracy="91"><cpe>cpe:/h:linksys:wet54gs5</cpe></osclass>
+<osclass type="WAP" vendor="Tranzeo" osfamily="embedded" accuracy="91"><cpe>cpe:/h:tranzeo:tr-cpq-19f</cpe></osclass>
+<osclass type="printer" vendor="Xerox" osfamily="embedded" accuracy="91"><cpe>cpe:/h:xerox:workcentre_pro_265</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.4.21 - 2.4.31 (likely embedded)" accuracy="91" line="45684">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:2.4</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="44602" lastboot="Sun Mar 12 01:16:03 2023"/>
+<tcpsequence index="199" difficulty="Good luck!" values="CD356D4D,CD680068,CD1CD96E,CDA672DA,CD72E1F0"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0"/>
+<tcptssequence class="100HZ" values="43FE34,43FE48,43FE52,43FE5C,43FE66"/>
+<hostscript><script id="smb-security-mode" output="&#xa;  account_used: &lt;blank&gt;&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">&lt;blank&gt;</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb-os-discovery" output="&#xa;  OS: Unix (Samba 3.0.20-Debian)&#xa;  Computer name: lame&#xa;  NetBIOS computer name: &#xa;  Domain name: hackthebox.gr&#xa;  FQDN: lame.hackthebox.gr&#xa;  System time: 2023-03-12T14:31:46-04:00&#xa;"><elem key="os">Unix</elem>
+<elem key="lanmanager">Samba 3.0.20-Debian</elem>
+<elem key="server"></elem>
+<elem key="date">2023-03-12T14:31:46-04:00</elem>
+<elem key="fqdn">lame.hackthebox.gr</elem>
+<elem key="domain_dns">hackthebox.gr</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+</script><script id="smb2-time" output="Protocol negotiation failed (SMB2)"/><script id="clock-skew" output="mean: 1h53m00s, deviation: 2h49m44s, median: -7m01s"><elem key="mean">6780</elem>
+<elem key="median">-421</elem>
+<elem key="count">2</elem>
+<elem key="stddev">10184</elem>
+</script></hostscript><times srtt="52377" rttvar="1003" to="100000"/>
+</host>
+<runstats><finished time="1678646365" timestr="Sun Mar 12 14:39:25 2023" summary="Nmap done at Sun Mar 12 14:39:25 2023; 1 IP address (1 host up) scanned in 254.19 seconds" elapsed="254.19" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

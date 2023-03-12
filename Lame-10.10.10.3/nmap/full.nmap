@@ -1,0 +1,37 @@
+# Nmap 7.93 scan initiated Sun Mar 12 14:35:11 2023 as: nmap -sC -sV -O -p- -oA nmap/full 10.10.10.3
+Nmap scan report for 10.10.10.3
+Host is up (0.052s latency).
+Not shown: 65530 filtered tcp ports (no-response)
+PORT     STATE SERVICE     VERSION
+21/tcp   open  ftp         vsftpd 2.3.4
+|_ftp-anon: Anonymous FTP login allowed (FTP code 230)
+22/tcp   open  ssh         OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)
+| ssh-hostkey: 
+|   1024 600fcfe1c05f6a74d69024fac4d56ccd (DSA)
+|_  2048 5656240f211ddea72bae61b1243de8f3 (RSA)
+139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp  open  netbios-ssn Samba smbd 3.0.20-Debian (workgroup: WORKGROUP)
+3632/tcp open  distccd     distccd v1 ((GNU) 4.2.4 (Ubuntu 4.2.4-1ubuntu4))
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: DD-WRT v24-sp1 (Linux 2.4.36) (93%), Linux 2.6.23 (92%), OpenWrt White Russian 0.9 (Linux 2.4.30) (92%), Belkin N300 WAP (Linux 2.6.30) (91%), Control4 HC-300 home controller (91%), D-Link DAP-1522 WAP, or Xerox WorkCentre Pro 245 or 6556 printer (91%), Dell Integrated Remote Access Controller (iDRAC5) (91%), Dell Integrated Remote Access Controller (iDRAC6) (91%), Linksys WET54GS5 WAP, Tranzeo TR-CPQ-19f WAP, or Xerox WorkCentre Pro 265 printer (91%), Linux 2.4.21 - 2.4.31 (likely embedded) (91%)
+No exact OS matches for host (test conditions non-ideal).
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+| smb-security-mode: 
+|   account_used: <blank>
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb-os-discovery: 
+|   OS: Unix (Samba 3.0.20-Debian)
+|   Computer name: lame
+|   NetBIOS computer name: 
+|   Domain name: hackthebox.gr
+|   FQDN: lame.hackthebox.gr
+|_  System time: 2023-03-12T14:31:46-04:00
+|_smb2-time: Protocol negotiation failed (SMB2)
+|_clock-skew: mean: 1h53m00s, deviation: 2h49m44s, median: -7m01s
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Mar 12 14:39:25 2023 -- 1 IP address (1 host up) scanned in 254.19 seconds

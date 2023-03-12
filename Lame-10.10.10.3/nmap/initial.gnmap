@@ -1,0 +1,4 @@
+# Nmap 7.93 scan initiated Sun Mar 12 14:34:10 2023 as: nmap -sC -sV -O -oA nmap/initial 10.10.10.3
+Host: 10.10.10.3 ()	Status: Up
+Host: 10.10.10.3 ()	Ports: 21/open/tcp//ftp//vsftpd 2.3.4/, 22/open/tcp//ssh//OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)/, 139/open/tcp//netbios-ssn//Samba smbd 3.X - 4.X (workgroup: WORKGROUP)/, 445/open/tcp//netbios-ssn//Samba smbd 3.0.20-Debian (workgroup: WORKGROUP)/	Ignored State: filtered (996)	Seq Index: 198	IP ID Seq: All zeros
+# Nmap done at Sun Mar 12 14:35:18 2023 -- 1 IP address (1 host up) scanned in 68.78 seconds

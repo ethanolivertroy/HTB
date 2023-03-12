@@ -1,0 +1,4 @@
+# Nmap 7.93 scan initiated Sun Mar 12 14:35:32 2023 as: nmap -sU -O -p- -oA nmap/udp 10.10.10.3
+Host: 10.10.10.3 ()	Status: Up
+Host: 10.10.10.3 ()	Ports: 22/closed/udp//ssh///, 139/closed/udp//netbios-ssn///, 445/closed/udp//microsoft-ds///, 3632/closed/udp//distcc///	Ignored State: open|filtered (65531)
+# Nmap done at Sun Mar 12 15:06:16 2023 -- 1 IP address (1 host up) scanned in 1844.64 seconds

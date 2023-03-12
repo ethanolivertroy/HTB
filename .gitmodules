@@ -1,0 +1,3 @@
+[submodule "Lame-10.10.10.3/CVE-2007-2447"]
+	path = Lame-10.10.10.3/CVE-2007-2447
+	url = https://github.com/amriunix/CVE-2007-2447

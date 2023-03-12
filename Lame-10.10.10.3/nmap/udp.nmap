@@ -1,0 +1,14 @@
+# Nmap 7.93 scan initiated Sun Mar 12 14:35:32 2023 as: nmap -sU -O -p- -oA nmap/udp 10.10.10.3
+Nmap scan report for 10.10.10.3
+Host is up (0.053s latency).
+Not shown: 65531 open|filtered udp ports (no-response)
+PORT     STATE  SERVICE
+22/udp   closed ssh
+139/udp  closed netbios-ssn
+445/udp  closed microsoft-ds
+3632/udp closed distcc
+Too many fingerprints match this host to give specific OS details
+Network Distance: 2 hops
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Mar 12 15:06:16 2023 -- 1 IP address (1 host up) scanned in 1844.64 seconds
