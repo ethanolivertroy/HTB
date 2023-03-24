@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Thu Mar 23 19:42:17 2023 as: nmap -&#45;script smb-vuln* -p 445 -oA smb_vulns 10.10.10.4 -->
+<nmaprun scanner="nmap" args="nmap -&#45;script smb-vuln* -p 445 -oA smb_vulns 10.10.10.4" start="1679614937" startstr="Thu Mar 23 19:42:17 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="445"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.10.4" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1679614937" endtime="1679614942"><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="10.10.10.4" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-ms08-067" output="&#xa;  VULNERABLE:&#xa;  Microsoft Windows system vulnerable to remote code execution (MS08-067)&#xa;    State: VULNERABLE&#xa;    IDs:  CVE:CVE-2008-4250&#xa;          The Server service in Microsoft Windows 2000 SP4, XP SP2 and SP3, Server 2003 SP1 and SP2,&#xa;          Vista Gold and SP1, Server 2008, and 7 Pre-Beta allows remote attackers to execute arbitrary&#xa;          code via a crafted RPC request that triggers the overflow during path canonicalization.&#xa;          &#xa;    Disclosure date: 2008-10-23&#xa;    References:&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4250&#xa;      https://technet.microsoft.com/en-us/library/security/ms08-067.aspx&#xa;"><table key="CVE-2008-4250">
+<elem key="title">Microsoft Windows system vulnerable to remote code execution (MS08-067)</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="ids">
+<elem>CVE:CVE-2008-4250</elem>
+</table>
+<table key="description">
+<elem>    The Server service in Microsoft Windows 2000 SP4, XP SP2 and SP3, Server 2003 SP1 and SP2,&#xa;    Vista Gold and SP1, Server 2008, and 7 Pre-Beta allows remote attackers to execute arbitrary&#xa;    code via a crafted RPC request that triggers the overflow during path canonicalization.&#xa;    </elem>
+</table>
+<table key="dates">
+<table key="disclosure">
+<elem key="year">2008</elem>
+<elem key="month">10</elem>
+<elem key="day">23</elem>
+</table>
+</table>
+<elem key="disclosure">2008-10-23</elem>
+<table key="refs">
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4250</elem>
+<elem>https://technet.microsoft.com/en-us/library/security/ms08-067.aspx</elem>
+</table>
+</table>
+</script><script id="smb-vuln-ms10-061" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms17-010" output="&#xa;  VULNERABLE:&#xa;  Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)&#xa;    State: VULNERABLE&#xa;    IDs:  CVE:CVE-2017-0143&#xa;    Risk factor: HIGH&#xa;      A critical remote code execution vulnerability exists in Microsoft SMBv1&#xa;       servers (ms17-010).&#xa;          &#xa;    Disclosure date: 2017-03-14&#xa;    References:&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0143&#xa;      https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/&#xa;      https://technet.microsoft.com/en-us/library/security/ms17-010.aspx&#xa;"><table key="CVE-2017-0143">
+<elem key="title">Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="ids">
+<elem>CVE:CVE-2017-0143</elem>
+</table>
+<table key="description">
+<elem>A critical remote code execution vulnerability exists in Microsoft SMBv1&#xa; servers (ms17-010).&#xa;    </elem>
+</table>
+<table key="dates">
+<table key="disclosure">
+<elem key="year">2017</elem>
+<elem key="month">03</elem>
+<elem key="day">14</elem>
+</table>
+</table>
+<elem key="disclosure">2017-03-14</elem>
+<table key="refs">
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0143</elem>
+<elem>https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/</elem>
+<elem>https://technet.microsoft.com/en-us/library/security/ms17-010.aspx</elem>
+</table>
+</table>
+</script></hostscript><times srtt="53049" rttvar="40214" to="213905"/>
+</host>
+<runstats><finished time="1679614942" timestr="Thu Mar 23 19:42:22 2023" summary="Nmap done at Thu Mar 23 19:42:22 2023; 1 IP address (1 host up) scanned in 5.57 seconds" elapsed="5.57" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
